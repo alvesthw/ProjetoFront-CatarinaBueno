@@ -124,4 +124,34 @@ $(document).ready(function(){
         });
 
 });	
+
+document.getElementById("sendBtn").addEventListener("click", function () {
+  // Captura os dados do formulário
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const comment = document.getElementById("comment").value;
+
+  // Formata a mensagem para o WhatsApp
+  const message = `Nome: ${name}\nEmail: ${email}\nAssunto: ${subject}\nMensagem: ${comment}`;
+  const whatsappNumber = "5511960745761"; // Substitua pelo seu número
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  // Salva no localStorage
+  localStorage.setItem(
+    "contactData",
+    JSON.stringify({ name, email, subject, comment })
+  );
+
+  // Envia mensagem no WhatsApp
+  window.open(whatsappLink, "_blank");
+
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("subject").value = "";
+  document.getElementById("comment").value = "";
+});
+	
 	

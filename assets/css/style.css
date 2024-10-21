@@ -605,6 +605,28 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-bottom: 25px;
 }
 
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.social-links a {
+    color: #888ea5;
+    margin: 0 10px;
+    margin-right: 80px;
+}
+
+.social-links a {
+    color: #888ea5;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #b636ff;
+
+}
+
 
 .hm-footer-copyright p{
     color: #888ea5;
