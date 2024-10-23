@@ -596,44 +596,72 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform: scale(1.1); /* Aumenta o ícone um pouco ao passar o mouse */
 }
 
-/* Ajuste da classe icone, se necessário */
-.icone {
-    padding: 0; /* Remove qualquer padding para evitar movimento */
+/*===============================
+    Footer
+===============================*/
+.footer {
+    width: 100%;
 }
 
-.redes-sociais{
-    padding-bottom: 25px;
+.social-links{
+    padding-top: 30px;
 }
 
-.social-links {
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
+.hm-footer-copyright,
+.social-links,
+#scroll-Top {
+    flex: 1;
+    text-align: center;
 }
 
-.social-links a {
-    color: #888ea5;
-    margin: 0 10px;
-    margin-right: 80px;
+.icon-social i {
+    padding: 15px;
+    transition: none; /* Remove qualquer animação ou transição */
 }
 
-.social-links a {
-    color: #888ea5;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #b636ff;
-
+.icon-social i:hover {
+    color: inherit; /* Mantém a cor original */
+    transform: none; /* Remove qualquer transformação como escala */
 }
 
 
+.return-to-top {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer.completo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hm-footer-copyright,
+    .social-links,
+    #scroll-Top {
+        margin-bottom: 10px;
+    }
+}
+.fa-whatsapp {
+    padding-right: 20px;
+}
 .hm-footer-copyright p{
     color: #888ea5;
     text-transform: capitalize;
     padding: 38px 0 ;
 }
-.hm-footer-copyright p a {color: #888ea5;}
+
+.social-button {
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades em 0.3 segundos */
+}
+
+.social-button:hover {
+    color: #ffffff; /* Exemplo: muda a cor do texto no hover */
+    background-color: #0056b3; /* Exemplo: muda a cor de fundo no hover */
+    border-color: #004085; /* Exemplo: muda a cor da borda no hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Exemplo: adiciona sombra no hover */
+}
+
+
 /*===============================
     Scroll Top
 ===============================*/
