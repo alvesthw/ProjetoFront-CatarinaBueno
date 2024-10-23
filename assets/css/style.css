@@ -618,6 +618,73 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-align: center; /* Centralizar texto */
 }
 
+/*-------------------------------------
+        newsletter
+--------------------------------------*/
+.newsletter {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container-n { /* Classe corrigida */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Mantém a largura em 100% do contêiner */
+    max-width: 400px; /* Aumentado para 300px */
+    margin-right: 10px;
+}
+
+.inscrever-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inscrever-button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 600px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .email-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+}
+
 
 /*===============================
     Footer
